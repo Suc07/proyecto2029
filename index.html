@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NEONBYTE | Tecnología que se siente</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <div class="logo">
+            <span class="logo-symbol">N</span>
+
+            <div>
+                <strong>NEONBYTE</strong>
+                <small>TECH STORE</small>
+            </div>
+        </div>
+
+        <nav class="nav">
+
+            <a href="#inicio">Inicio</a>
+            <a href="#categorias">Categorías</a>
+            <a href="#productos">Productos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+
+        </nav>
+
+        <div class="header-actions">
+
+            <button id="themeBtn" class="icon-btn">
+                ☀
+            </button>
+
+            <button id="cartBtn" class="cart-btn">
+                🛒
+                <span id="cartCount">0</span>
+            </button>
+
+            <button id="menuBtn" class="menu-btn">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <span class="section-tag">
+                    TECNOLOGÍA SIN LÍMITES
+                </span>
+
+                <h1>
+                    Tecnología que
+                    <span>se siente.</span>
+                </h1>
+
+                <p>
+                    Laptops, tablets, periféricos, energía y soluciones
+                    tecnológicas para llevar tus ideas al siguiente nivel.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#productos" class="primary-btn">
+                        Ver productos →
+                    </a>
+
+                    <a href="#contacto" class="secondary-btn">
+                        Contactarnos
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual">
+
+                <div class="hero-circle"></div>
+
+                <div class="floating-card card-one">
+                    ⚡
+                    <strong>FAST</strong>
+                    <small>Performance</small>
+                </div>
+
+                <div class="floating-card card-two">
+                    💻
+                    <strong>TECH</strong>
+                    <small>Innovation</small>
+                </div>
+
+                <div class="hero-device">
+                    <div class="device-screen">
+                        <span>NEON</span>
+                        <strong>BYTE</strong>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CATEGORÍAS
+        ========================== -->
+
+        <section class="categories-section" id="categorias">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    01 / CATEGORÍAS
+                </span>
+
+                <h2>
+                    Encuentra tu
+                    <span>tecnología.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="categories-grid">
+
+                <article class="category-card">
+
+                    <span class="category-icon">💻</span>
+
+                    <h3>Laptops</h3>
+
+                    <p>
+                        Potencia para estudiar,
+                        trabajar y crear.
+                    </p>
+
+                    <button data-category="Laptops">
+                        Explorar →
+                    </button>
+
+                </article>
+
+
+                <article class="category-card">
+
+                    <span class="category-icon">📱</span>
+
+                    <h3>Tablets</h3>
+
+                    <p>
+                        Portabilidad y productividad
+                        en cualquier lugar.
+                    </p>
+
+                    <button data-category="Tablets">
+                        Explorar →
+                    </button>
+
+                </article>
+
+
+                <article class="category-card">
+
+                    <span class="category-icon">🎮</span>
+
+                    <h3>Periféricos</h3>
+
+                    <p>
+                        Mouse, teclados y accesorios
+                        para mejorar tu setup.
+                    </p>
+
+                    <button data-category="Periféricos">
+                        Explorar →
+                    </button>
+
+                </article>
+
+
+                <article class="category-card">
+
+                    <span class="category-icon">⚡</span>
+
+                    <h3>Energía</h3>
+
+                    <p>
+                        Cargadores y power banks
+                        para nunca detenerte.
+                    </p>
+
+                    <button data-category="Energía">
+                        Explorar →
+                    </button>
+
+                </article>
+
+
+                <article class="category-card">
+
+                    <span class="category-icon">🌐</span>
+
+                    <h3>Redes</h3>
+
+                    <p>
+                        Conectividad rápida y
+                        almacenamiento.
+                    </p>
+
+                    <button data-category="Redes">
+                        Explorar →
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PRODUCTOS
+        ========================== -->
+
+        <section class="products-section" id="productos">
+
+            <div class="section-heading products-heading">
+
+                <div>
+
+                    <span class="section-tag">
+                        02 / PRODUCTOS
+                    </span>
+
+                    <h2>
+                        Tecnología
+                        <span>seleccionada.</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="product-tools">
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Buscar producto..."
+                    >
+
+
+                    <select id="sortSelect">
+
+                        <option value="default">
+                            Ordenar
+                        </option>
+
+                        <option value="low">
+                            Menor precio
+                        </option>
+
+                        <option value="high">
+                            Mayor precio
+                        </option>
+
+                        <option value="name">
+                            Nombre
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="filter-buttons">
+
+                <button class="filter-btn active" data-filter="all">
+                    Todos
+                </button>
+
+                <button class="filter-btn" data-filter="Laptops">
+                    Laptops
+                </button>
+
+                <button class="filter-btn" data-filter="Tablets">
+                    Tablets
+                </button>
+
+                <button class="filter-btn" data-filter="Periféricos">
+                    Periféricos
+                </button>
+
+                <button class="filter-btn" data-filter="Energía">
+                    Energía
+                </button>
+
+                <button class="filter-btn" data-filter="Redes">
+                    Redes
+                </button>
+
+            </div>
+
+
+            <div class="products-grid" id="productsGrid">
+
+                <!-- Los productos se generan desde JavaScript -->
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             OFERTA
+        ========================== -->
+
+        <section class="offer-section">
+
+            <div class="offer-content">
+
+                <span class="section-tag">
+                    OFERTA ESPECIAL
+                </span>
+
+                <h2>
+                    Upgradea tu setup.
+                </h2>
+
+                <p>
+                    Aprovecha nuestras promociones por tiempo limitado.
+                </p>
+
+                <div class="countdown">
+
+                    <div>
+                        <strong id="days">00</strong>
+                        <small>Días</small>
+                    </div>
+
+                    <div>
+                        <strong id="hours">00</strong>
+                        <small>Horas</small>
+                    </div>
+
+                    <div>
+                        <strong id="minutes">00</strong>
+                        <small>Min</small>
+                    </div>
+
+                    <div>
+                        <strong id="seconds">00</strong>
+                        <small>Seg</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="offer-symbol">
+                %
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             NOSOTROS
+        ========================== -->
+
+        <section class="about-section" id="nosotros">
+
+            <div class="about-visual">
+
+                <div class="about-box">
+
+                    <span>NB</span>
+
+                    <strong>
+                        2029
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <span class="section-tag">
+                    03 / NOSOTROS
+                </span>
+
+                <h2>
+                    Más que una tienda.
+                    <span>Una experiencia.</span>
+                </h2>
+
+                <p>
+                    En NEONBYTE buscamos acercar la tecnología
+                    a personas que quieren estudiar, trabajar,
+                    crear y disfrutar sin complicaciones.
+                </p>
+
+                <p>
+                    Seleccionamos productos pensando en rendimiento,
+                    utilidad, diseño y relación calidad-precio.
+                </p>
+
+
+                <div class="about-stats">
+
+                    <div>
+                        <strong>+100</strong>
+                        <span>Productos</span>
+                    </div>
+
+                    <div>
+                        <strong>5</strong>
+                        <span>Sucursales</span>
+                    </div>
+
+                    <div>
+                        <strong>24/7</strong>
+                        <span>Soporte</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             POR QUÉ NEONBYTE
+        ========================== -->
+
+        <section class="why-section">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    04 / ¿POR QUÉ NOSOTROS?
+                </span>
+
+                <h2>
+                    Compra con
+                    <span>confianza.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="why-grid">
+
+                <article>
+                    <span>01</span>
+                    <h3>Productos originales</h3>
+                    <p>
+                        Tecnología seleccionada y lista
+                        para acompañarte.
+                    </p>
+                </article>
+
+                <article>
+                    <span>02</span>
+                    <h3>Garantía</h3>
+                    <p>
+                        Compra con respaldo y atención
+                        después de tu compra.
+                    </p>
+                </article>
+
+                <article>
+                    <span>03</span>
+                    <h3>Atención rápida</h3>
+                    <p>
+                        Resolvemos tus dudas antes y
+                        después de comprar.
+                    </p>
+                </article>
+
+                <article>
+                    <span>04</span>
+                    <h3>Precios competitivos</h3>
+                    <p>
+                        Opciones pensadas para diferentes
+                        presupuestos.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SUCURSALES
+        ========================== -->
+
+        <section class="branches-section">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    SUCURSALES
+                </span>
+
+                <h2>
+                    Estamos
+                    <span>cerca.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="branches-grid">
+
+                <div class="branch-card">
+                    <span>01</span>
+                    <h3>Lima</h3>
+                    <p>Lima Metropolitana</p>
+                </div>
+
+                <div class="branch-card">
+                    <span>02</span>
+                    <h3>Chiclayo</h3>
+                    <p>Lambayeque</p>
+                </div>
+
+                <div class="branch-card">
+                    <span>03</span>
+                    <h3>Tarapoto</h3>
+                    <p>San Martín</p>
+                </div>
+
+                <div class="branch-card">
+                    <span>04</span>
+                    <h3>Cajamarca</h3>
+                    <p>Cajamarca</p>
+                </div>
+
+                <div class="branch-card">
+                    <span>05</span>
+                    <h3>Huancayo</h3>
+                    <p>Junín</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACTO QR
+        ========================== -->
+
+        <section class="contact-qr" id="contacto">
+
+            <div class="qr-info">
+
+                <span class="section-tag">
+                    05 / CONTACTO
+                </span>
+
+                <h2>
+                    Habla con
+                    <span>NEONBYTE.</span>
+                </h2>
+
+                <p>
+                    ¿Tienes alguna consulta sobre nuestros productos?
+                    Escanea el código QR y escríbenos directamente
+                    por WhatsApp.
+                </p>
+
+                <a
+                    href="https://wa.me/51929647116"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="qr-whatsapp-btn"
+                >
+                    Abrir WhatsApp →
+                </a>
+
+            </div>
+
+
+            <div class="qr-card">
+
+                <img
+                    src="fotos/qr-whatsapp-neonbyte.png"
+                    alt="Código QR de WhatsApp NEONBYTE"
+                >
+
+                <strong>
+                    +51 929 647 116
+                </strong>
+
+                <span>
+                    Escanea para contactarnos
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+
+                    <span class="logo-symbol">N</span>
+
+                    <div>
+                        <strong>NEONBYTE</strong>
+                        <small>TECH STORE</small>
+                    </div>
+
+                </div>
+
+                <p>
+                    Tecnología que se siente.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Productos</h4>
+
+                <a href="#productos">Laptops</a>
+                <a href="#productos">Tablets</a>
+                <a href="#productos">Periféricos</a>
+                <a href="#productos">Energía</a>
+                <a href="#productos">Redes</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Pedidos</h4>
+
+                <a href="#">Por mayor</a>
+                <a href="#">Por menor</a>
+                <a href="#">Por unidad</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Contacto</h4>
+
+                <a href="#contacto">
+                    WhatsApp
+                </a>
+
+                <a href="#">
+                    Instagram
+                </a>
+
+                <a href="#">
+                    TikTok
+                </a>
+
+                <a href="#">
+                    Facebook
+                </a>
+
+                <a href="#">
+                    YouTube
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2029 NEONBYTE. Todos los derechos reservados.
+            </p>
+
+            <p>
+                Desarrollado por
+                <strong>
+                    José Alberto Huamani Sucari
+                </strong>
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         CARRITO
+    ========================== -->
+
+    <aside class="cart-drawer" id="cartDrawer">
+
+        <div class="cart-header">
+
+            <h2>Tu carrito</h2>
+
+            <button id="closeCart">
+                ×
+            </button>
+
+        </div>
+
+
+        <div id="cartItems" class="cart-items">
+
+            <p class="empty-cart">
+                Tu carrito está vacío.
+            </p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div>
+                <span>Total</span>
+
+                <strong id="cartTotal">
+                    S/ 0
+                </strong>
+            </div>
+
+            <button class="checkout-btn">
+                Finalizar compra
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =========================
+         OVERLAY
+    ========================== -->
+
+    <div class="overlay" id="overlay"></div>
+
+
+    <!-- =========================
+         PRODUCT MODAL
+    ========================== -->
+
+    <div class="product-modal" id="productModal">
+
+        <div class="modal-content">
+
+            <button id="closeModal" class="modal-close">
+                ×
+            </button>
+
+            <div id="modalProduct"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         CHAT BOX
+    ========================== -->
+
+    <button id="chatButton" class="chat-button">
+        💬
+    </button>
+
+
+    <div id="chatBox" class="chat-box">
+
+        <div class="chat-header">
+
+            <div>
+
+                <strong>
+                    NEONBYTE Assistant
+                </strong>
+
+                <span>
+                    ● En línea
+                </span>
+
+            </div>
+
+            <button id="closeChat">
+                ×
+            </button>
+
+        </div>
+
+
+        <div id="chatMessages" class="chat-messages">
+
+            <div class="bot-message">
+                ¡Hola! 👋 Soy el asistente de NEONBYTE.
+                ¿En qué puedo ayudarte?
+            </div>
+
+        </div>
+
+
+        <div class="quick-questions">
+
+            <button data-question="¿Qué productos venden?">
+                Productos
+            </button>
+
+            <button data-question="¿Cuánto cuesta una laptop?">
+                Laptops
+            </button>
+
+            <button data-question="¿Hacen envíos?">
+                Envíos
+            </button>
+
+            <button data-question="¿Dónde están ubicados?">
+                Ubicación
+            </button>
+
+        </div>
+
+
+        <div class="chat-input">
+
+            <input
+                type="text"
+                id="chatInput"
+                placeholder="Escribe tu pregunta..."
+            >
+
+            <button id="sendChat">
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         BACK TO TOP
+    ========================== -->
+
+    <button id="backTop" class="back-top">
+        ↑
+    </button>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>
