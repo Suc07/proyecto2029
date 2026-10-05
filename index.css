@@ -1752,10 +1752,13 @@ body.light-mode .floating-panel {
    FOOTER
 ========================================================= */
 
+/* =========================================================
+   FOOTER
+========================================================= */
+
 .footer {
     border-top: 1px solid var(--border);
     padding: 70px 5% 25px;
-
     background: var(--bg-2);
 }
 
@@ -1809,6 +1812,11 @@ body.light-mode .floating-panel {
     color: #656d76;
 
     font-size: 9px;
+}
+
+.developer-name {
+    color: var(--neon);
+    font-weight: 800;
 }
 
 
