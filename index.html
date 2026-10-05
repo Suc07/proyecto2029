@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,13 +27,14 @@
             </div>
         </div>
 
-        <nav class="nav">
+        <nav class="nav" id="mainNav">
 
             <a href="#inicio">Inicio</a>
             <a href="#categorias">Categorías</a>
             <a href="#productos">Productos</a>
             <a href="#nosotros">Nosotros</a>
             <a href="#contacto">Contacto</a>
+            <a href="formulario.html">Pedidos</a>
 
         </nav>
 
@@ -86,8 +88,8 @@
                         Ver productos →
                     </a>
 
-                    <a href="#contacto" class="secondary-btn">
-                        Contactarnos
+                    <a href="formulario.html" class="secondary-btn">
+                        Hacer pedido
                     </a>
 
                 </div>
@@ -112,10 +114,12 @@
                 </div>
 
                 <div class="hero-device">
+
                     <div class="device-screen">
                         <span>NEON</span>
                         <strong>BYTE</strong>
                     </div>
+
                 </div>
 
             </div>
@@ -269,7 +273,6 @@
                         placeholder="Buscar producto..."
                     >
 
-
                     <select id="sortSelect">
 
                         <option value="default">
@@ -324,11 +327,7 @@
             </div>
 
 
-            <div class="products-grid" id="productsGrid">
-
-                <!-- Los productos se generan desde JavaScript -->
-
-            </div>
+            <div class="products-grid" id="productsGrid"></div>
 
         </section>
 
@@ -397,10 +396,7 @@
                 <div class="about-box">
 
                     <span>NB</span>
-
-                    <strong>
-                        2029
-                    </strong>
+                    <strong>2029</strong>
 
                 </div>
 
@@ -455,7 +451,7 @@
 
 
         <!-- =========================
-             POR QUÉ NEONBYTE
+             POR QUÉ NOSOTROS
         ========================== -->
 
         <section class="why-section">
@@ -507,7 +503,7 @@
                     <span>04</span>
                     <h3>Precios competitivos</h3>
                     <p>
-                        Opciones pensadas para diferentes
+                        Opciones para diferentes
                         presupuestos.
                     </p>
                 </article>
@@ -575,54 +571,95 @@
 
 
         <!-- =========================
-             CONTACTO QR
+             QR DE LA PÁGINA
         ========================== -->
 
-        <section class="contact-qr" id="contacto">
+        <section class="page-qr-section">
 
-            <div class="qr-info">
+            <div class="page-qr-text">
 
                 <span class="section-tag">
-                    05 / CONTACTO
+                    05 / COMPARTE NEONBYTE
                 </span>
 
                 <h2>
-                    Habla con
-                    <span>NEONBYTE.</span>
+                    Lleva nuestra
+                    <span>página contigo.</span>
                 </h2>
 
                 <p>
-                    ¿Tienes alguna consulta sobre nuestros productos?
-                    Escanea el código QR y escríbenos directamente
-                    por WhatsApp.
+                    Escanea el código QR para ingresar directamente
+                    a nuestra tienda online desde cualquier celular.
                 </p>
 
-                <a
-                    href="https://wa.me/51929647116"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="qr-whatsapp-btn"
-                >
-                    Abrir WhatsApp →
-                </a>
+                <div class="qr-url">
+                    suc07.github.io/proyecto2029
+                </div>
 
             </div>
 
 
-            <div class="qr-card">
+            <div class="page-qr-card">
 
                 <img
-                    src="fotos/qr-whatsapp-neonbyte.png"
-                    alt="Código QR de WhatsApp NEONBYTE"
+                    src="fotos/qr-pagina-neonbyte.png"
+                    alt="Código QR de la página NEONBYTE"
                 >
 
                 <strong>
-                    +51 929 647 116
+                    NEONBYTE
                 </strong>
 
                 <span>
-                    Escanea para contactarnos
+                    Escanea para visitar nuestra página
                 </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACTO
+        ========================== -->
+
+        <section class="contact-section" id="contacto">
+
+            <div>
+
+                <span class="section-tag">
+                    CONTACTO
+                </span>
+
+                <h2>
+                    ¿Necesitas
+                    <span>ayuda?</span>
+                </h2>
+
+                <p>
+                    Escríbenos directamente para consultar
+                    disponibilidad, precios o realizar un pedido.
+                </p>
+
+            </div>
+
+
+            <div class="contact-actions">
+
+                <a
+                    href="https://wa.me/51929647116"
+                    target="_blank"
+                    class="whatsapp-btn"
+                >
+                    💬 WhatsApp
+                </a>
+
+                <a
+                    href="formulario.html"
+                    class="primary-btn"
+                >
+                    Realizar pedido →
+                </a>
 
             </div>
 
@@ -676,34 +713,38 @@
 
                 <h4>Pedidos</h4>
 
-                <a href="#">Por mayor</a>
-                <a href="#">Por menor</a>
-                <a href="#">Por unidad</a>
+                <a href="formulario.html">
+                    Por mayor
+                </a>
+
+                <a href="formulario.html">
+                    Por menor
+                </a>
+
+                <a href="formulario.html">
+                    Por unidad
+                </a>
 
             </div>
 
 
             <div class="footer-column">
 
-                <h4>Contacto</h4>
+                <h4>Redes</h4>
 
-                <a href="#contacto">
-                    WhatsApp
-                </a>
-
-                <a href="#">
+                <a href="https://www.instagram.com/" target="_blank">
                     Instagram
                 </a>
 
-                <a href="#">
+                <a href="https://www.tiktok.com/" target="_blank">
                     TikTok
                 </a>
 
-                <a href="#">
+                <a href="https://www.facebook.com/" target="_blank">
                     Facebook
                 </a>
 
-                <a href="#">
+                <a href="https://www.youtube.com/" target="_blank">
                     YouTube
                 </a>
 
@@ -766,24 +807,20 @@
                 </strong>
             </div>
 
-            <button class="checkout-btn">
+            <a href="formulario.html" class="checkout-btn">
                 Finalizar compra
-            </button>
+            </a>
 
         </div>
 
     </aside>
 
 
-    <!-- =========================
-         OVERLAY
-    ========================== -->
-
     <div class="overlay" id="overlay"></div>
 
 
     <!-- =========================
-         PRODUCT MODAL
+         MODAL PRODUCTO
     ========================== -->
 
     <div class="product-modal" id="productModal">
@@ -837,7 +874,8 @@
 
             <div class="bot-message">
                 ¡Hola! 👋 Soy el asistente de NEONBYTE.
-                ¿En qué puedo ayudarte?
+                Tengo información sobre productos, precios,
+                pedidos, envíos, sucursales y más.
             </div>
 
         </div>
@@ -881,10 +919,6 @@
     </div>
 
 
-    <!-- =========================
-         BACK TO TOP
-    ========================== -->
-
     <button id="backTop" class="back-top">
         ↑
     </button>
@@ -893,4 +927,5 @@
     <script src="index.js"></script>
 
 </body>
+
 </html>
