@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Formulario de pedidos NEONBYTE."
+    >
+
+    <title>NEONBYTE | Realizar pedido</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="formulario.css"
+    >
+
+</head>
+
+
+<body>
+
+    <header class="form-header">
+
+        <a
+            href="index.html"
+            class="brand"
+        >
+
+            <div class="brand-mark">
+                N
+            </div>
+
+            <div>
+                <div class="brand-name">
+                    NEON<span>BYTE</span>
+                </div>
+
+                <small>
+                    TECH STORE
+                </small>
+            </div>
+
+        </a>
+
+
+        <a
+            href="index.html"
+            class="back-link"
+        >
+            ← Volver a la tienda
+        </a>
+
+    </header>
+
+
+    <main class="form-page">
+
+        <section class="form-hero">
+
+            <div>
+
+                <p class="form-label">
+                    PEDIDOS NEONBYTE
+                </p>
+
+                <h1>
+                    Cuéntanos qué
+                    <span>necesitas.</span>
+                </h1>
+
+                <p>
+                    Completa tus datos y nuestro formulario
+                    preparará automáticamente el mensaje
+                    para enviarlo por WhatsApp.
+                </p>
+
+            </div>
+
+
+            <div class="form-code">
+                <span>FORM</span>
+                <strong>2026</strong>
+            </div>
+
+        </section>
+
+
+        <section class="form-layout">
+
+            <div class="form-card">
+
+                <form id="orderForm">
+
+                    <!-- DATOS -->
+
+                    <div class="form-block">
+
+                        <div class="block-heading">
+                            <span>01</span>
+
+                            <div>
+                                <h2>
+                                    Datos personales
+                                </h2>
+
+                                <p>
+                                    Necesitamos estos datos para contactarte.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="input-grid">
+
+                            <div class="field field-full">
+
+                                <label for="nombre">
+                                    Nombre completo *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="nombre"
+                                    name="nombre"
+                                    placeholder="Ej. José Alberto Huamani"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label for="telefono">
+                                    Teléfono *
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="telefono"
+                                    name="telefono"
+                                    placeholder="999 999 999"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label for="correo">
+                                    Correo electrónico
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="correo"
+                                    name="correo"
+                                    placeholder="correo@email.com"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PEDIDO -->
+
+                    <div class="form-block">
+
+                        <div class="block-heading">
+                            <span>02</span>
+
+                            <div>
+                                <h2>
+                                    Tu pedido
+                                </h2>
+
+                                <p>
+                                    Indica qué producto necesitas.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="input-grid">
+
+                            <div class="field">
+
+                                <label for="tipo">
+                                    Tipo de compra
+                                </label>
+
+                                <select
+                                    id="tipo"
+                                    name="tipo"
+                                >
+
+                                    <option value="Unidad">
+                                        Unidad
+                                    </option>
+
+                                    <option value="Minorista">
+                                        Minorista
+                                    </option>
+
+                                    <option value="Mayorista">
+                                        Mayorista
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label for="categoria">
+                                    Categoría
+                                </label>
+
+                                <select
+                                    id="categoria"
+                                    name="categoria"
+                                >
+
+                                    <option value="Laptops">
+                                        Laptops
+                                    </option>
+
+                                    <option value="Tablets">
+                                        Tablets
+                                    </option>
+
+                                    <option value="Periféricos">
+                                        Periféricos
+                                    </option>
+
+                                    <option value="Energía">
+                                        Energía
+                                    </option>
+
+                                    <option value="Redes">
+                                        Redes
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="field field-full">
+
+                                <label for="producto">
+                                    Producto *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="producto"
+                                    name="producto"
+                                    placeholder="Ej. Lenovo Idea Pro"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label for="cantidad">
+                                    Cantidad *
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="cantidad"
+                                    name="cantidad"
+                                    value="1"
+                                    min="1"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label for="presupuesto">
+                                    Presupuesto
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="presupuesto"
+                                    name="presupuesto"
+                                    placeholder="Ej. S/ 1500"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ENTREGA -->
+
+                    <div class="form-block">
+
+                        <div class="block-heading">
+                            <span>03</span>
+
+                            <div>
+                                <h2>
+                                    Entrega
+                                </h2>
+
+                                <p>
+                                    Cuéntanos cómo prefieres recibirlo.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="input-grid">
+
+                            <div class="field">
+
+                                <label for="ciudad">
+                                    Ciudad
+                                </label>
+
+                                <select
+                                    id="ciudad"
+                                    name="ciudad"
+                                >
+
+                                    <option value="Lima">
+                                        Lima
+                                    </option>
+
+                                    <option value="Chiclayo">
+                                        Chiclayo
+                                    </option>
+
+                                    <option value="Tarapoto">
+                                        Tarapoto
+                                    </option>
+
+                                    <option value="Cajamarca">
+                                        Cajamarca
+                                    </option>
+
+                                    <option value="Huancayo">
+                                        Huancayo
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="field">
+
+                                <label for="entrega">
+                                    Modalidad
+                                </label>
+
+                                <select
+                                    id="entrega"
+                                    name="entrega"
+                                >
+
+                                    <option value="Envío">
+                                        Envío
+                                    </option>
+
+                                    <option value="Recojo">
+                                        Recojo
+                                    </option>
+
+                                    <option value="Coordinar">
+                                        Coordinar
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="field field-full">
+
+                                <label for="direccion">
+                                    Dirección
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="direccion"
+                                    name="direccion"
+                                    placeholder="Dirección de entrega"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MENSAJE -->
+
+                    <div class="form-block">
+
+                        <div class="block-heading">
+                            <span>04</span>
+
+                            <div>
+                                <h2>
+                                    Información adicional
+                                </h2>
+
+                                <p>
+                                    Agrega cualquier detalle importante.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div class="field">
+
+                            <label for="mensaje">
+                                Mensaje
+                            </label>
+
+                            <textarea
+                                id="mensaje"
+                                name="mensaje"
+                                rows="6"
+                                placeholder="Ej. Necesito una laptop para programación..."
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+
+                    <label class="terms">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            required
+                        >
+
+                        <span>
+                            Confirmo que la información proporcionada
+                            es correcta y deseo continuar con el pedido.
+                        </span>
+
+                    </label>
+
+
+                    <button
+                        type="submit"
+                        class="submit-button"
+                    >
+                        <span>
+                            Enviar pedido por WhatsApp
+                        </span>
+
+                        <strong>
+                            →
+                        </strong>
+                    </button>
+
+
+                    <div
+                        id="formMessage"
+                        class="form-message"
+                        aria-live="polite"
+                    ></div>
+
+                </form>
+
+            </div>
+
+
+            <!-- RESUMEN -->
+
+            <aside class="order-side">
+
+                <div class="side-card">
+
+                    <div class="side-top">
+                        <span>NEONBYTE</span>
+                        <span>ORDER</span>
+                    </div>
+
+
+                    <div class="side-icon">
+                        ✦
+                    </div>
+
+
+                    <h3>
+                        Pedido directo.
+                    </h3>
+
+                    <p>
+                        El botón genera un mensaje con toda
+                        la información del formulario y abre
+                        WhatsApp automáticamente.
+                    </p>
+
+
+                    <div class="side-line"></div>
+
+
+                    <div class="side-step">
+                        <span>01</span>
+                        <p>
+                            Completa tus datos
+                        </p>
+                    </div>
+
+                    <div class="side-step">
+                        <span>02</span>
+                        <p>
+                            Indica tu producto
+                        </p>
+                    </div>
+
+                    <div class="side-step">
+                        <span>03</span>
+                        <p>
+                            Envía el mensaje
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <a
+                    href="https://wa.me/51929647116"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="direct-whatsapp"
+                >
+
+                    <span>
+                        💬
+                    </span>
+
+                    <div>
+                        <strong>
+                            WhatsApp directo
+                        </strong>
+
+                        <small>
+                            +51 929 647 116
+                        </small>
+                    </div>
+
+                    <b>
+                        ↗
+                    </b>
+
+                </a>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <footer class="form-footer">
+
+        <p>
+            © 2026 NEONBYTE
+        </p>
+
+        <p>
+            Tecnología que se siente.
+        </p>
+
+    </footer>
+
+
+    <script src="formulario.js"></script>
+
+</body>
+
+</html>
